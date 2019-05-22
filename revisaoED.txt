@@ -1,0 +1,74 @@
+revisão para p2
+algoritmo de boyler moore
+	- procura ocorrências de uma palavra em uma frase
+
+
+algoritmo
+987154321 -> tabela de "pulos"
+
+tabela para caracteres que não estão na palavra, pula o tamanho total + 1
+os algoritmos de ordenação
+                      algoritmo
+
+**Boyler Moore permite dar "pulos" maiores que 1.**
+
+Qual é o pior caso de Boyler Moore?
+	1-Quando uma frase tem uma única letra repetida
+	2-Palavra com a mesma letra, exceto na primeira posição
+
+	1-xxxxxxxxxxxxxxxxxxxxxxxxx
+	
+	2-@xxxxxxxxxx
+	caso:11111111111
+	Nesse pior caso, se a frase tem n letras, e a palavra m letras, terei m*n comparaçoes.
+	Porém, este pior caso é raro, por isso Boyer Moore funciona bem na prática
+
+
+O exemplo abaixo NÃO é o pior caso: palavra que não existe na frase posso ter letras na frase
+que não estão na palavra, então vou dar pulos grandes
+
+	frutas como abacate banana uva pêssego e mamão
+palavra a ser buscada: abacaxi
+
+Converter expressão aritmética de notação infixa para posfixa
+Primeiro fazer a árvore da expressão 
+Regras:
+1. Operações menos prioritários mais em cima;
+2. No empate, pego o maias à direita;
+3. Fazer varredura esquerda->direita->raiz
+
+
+CUIDADO: nem sempre a raiz é o operador do meio! Podemos ter árvores desbalanceadas
+
+
+Quantas as operações custa descobrir alguém numa árvore binária de BUSCA?
+	log(n,2)
+
+
+Quantas operações custa descobrir alguém num vetor ordenado, com busca binária?
+	log(n,2)
+
+
+Qual é a vantagem da árvore binária de BUSCA sobre a busca binária num vetor ordenado?
+	Para inserir e remover é muito mais rápido usar ponteiros. Isso acontece na árvore
+	binária e não no vetor ordenado!!
+
+
+GRAFOS
+compostos de dois conjuntos: vértices e arestas. Fazer o exercício E1.1
+
+grafo complementar: mesmos vértices. Onde tem aresta, eu tiro, ontem não tem, coloco.
+
+desenhe cavalo 3x3
+mostre:
+  1.que ele é planar
+  2.um circuito hamiltoniano
+  3.um emparelhamento máximo
+
+exercício do cubo
+
+exercício das máquinas
+
+conteúdo que irá cair na prova também, porém o professor não passou: isomorfismo
+definição: como mostrar que dois grafos são isomorfos? Colocando nomes nos vértices, de forma que teoms 
+as mesmas arestas nos dois lados.
